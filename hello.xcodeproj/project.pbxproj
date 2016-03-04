@@ -12,6 +12,7 @@
 		5DB23DEA1C89C839008CBBB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB23DE81C89C839008CBBB4 /* Main.storyboard */; };
 		5DB23DEC1C89C839008CBBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB23DEB1C89C839008CBBB4 /* Assets.xcassets */; };
 		5DB23DEF1C89C83A008CBBB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB23DED1C89C83A008CBBB4 /* LaunchScreen.storyboard */; };
+		5DB23E171C89E6CF008CBBB4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DB23E191C89E6CF008CBBB4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,11 @@
 		5DB23DEB1C89C839008CBBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DB23DEE1C89C83A008CBBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DB23DF01C89C83A008CBBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB23E181C89E6CF008CBBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5DB23E1A1C89E6E0008CBBB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5DB23E1B1C89E7F9008CBBB4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		5DB23E1C1C89E7F9008CBBB4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5DB23E1D1C89E7F9008CBBB4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,23 @@
 		5DB23DE31C89C839008CBBB4 /* hello */ = {
 			isa = PBXGroup;
 			children = (
-				5DB23DE41C89C839008CBBB4 /* AppDelegate.swift */,
 				5DB23DE61C89C839008CBBB4 /* ViewController.swift */,
 				5DB23DE81C89C839008CBBB4 /* Main.storyboard */,
+				5DB23E141C89D5A8008CBBB4 /* Supporting Files */,
+			);
+			path = hello;
+			sourceTree = "<group>";
+		};
+		5DB23E141C89D5A8008CBBB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DB23E191C89E6CF008CBBB4 /* Localizable.strings */,
 				5DB23DEB1C89C839008CBBB4 /* Assets.xcassets */,
 				5DB23DED1C89C83A008CBBB4 /* LaunchScreen.storyboard */,
 				5DB23DF01C89C83A008CBBB4 /* Info.plist */,
+				5DB23DE41C89C839008CBBB4 /* AppDelegate.swift */,
 			);
-			path = hello;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +122,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 5DB23DD81C89C839008CBBB4;
 			productRefGroup = 5DB23DE21C89C839008CBBB4 /* Products */;
@@ -124,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB23DEF1C89C83A008CBBB4 /* LaunchScreen.storyboard in Resources */,
+				5DB23E171C89E6CF008CBBB4 /* Localizable.strings in Resources */,
 				5DB23DEC1C89C839008CBBB4 /* Assets.xcassets in Resources */,
 				5DB23DEA1C89C839008CBBB4 /* Main.storyboard in Resources */,
 			);
@@ -148,6 +165,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5DB23DE91C89C839008CBBB4 /* Base */,
+				5DB23E1B1C89E7F9008CBBB4 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -156,8 +174,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				5DB23DEE1C89C83A008CBBB4 /* Base */,
+				5DB23E1C1C89E7F9008CBBB4 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5DB23E191C89E6CF008CBBB4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB23E181C89E6CF008CBBB4 /* Base */,
+				5DB23E1A1C89E6E0008CBBB4 /* en */,
+				5DB23E1D1C89E7F9008CBBB4 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,6 +316,7 @@
 				5DB23DF51C89C83A008CBBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
